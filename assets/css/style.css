@@ -1,0 +1,35 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+body {
+    margin: 0;
+    background-color: red;
+    padding: 0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.burger {
+    display: none; /* Masqué par défaut */
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none; /* Masquer le menu classique sur les écrans plus petits */
+    }
+
+    .burger {
+        display: block; /* Afficher le menu burger sur les écrans plus petits */
+        cursor: pointer;
+    }
+}
