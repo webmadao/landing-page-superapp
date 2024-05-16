@@ -1,35 +1,297 @@
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-body {
-    margin: 0;
-    background-color: red;
-    padding: 0;
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.nav-links {
+body {
+  
+  font-family: "OpenSans", sans-serif;
+}
+
+/* ---------------------------------- Nav -----------------------*/
+nav {
     display: flex;
+    font-size: 14px;
+    justify-content: baseline;
+    align-items: center;
+    padding: 0 10px;
+    gap: 20px;
+    background-color: #DD5555;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
     list-style: none;
 }
 
-.nav-links li {
-    margin-right: 20px;
+ul li {
+    padding: 20px;
 }
 
-.burger {
-    display: none; /* Masqué par défaut */
+ul li:hover {
+    cursor: pointer;
+    background-color: #943838;
 }
 
-@media screen and (max-width: 768px) {
-    .nav-links {
-        display: none; /* Masquer le menu classique sur les écrans plus petits */
-    }
+ ul li a{
+    text-decoration: none;
+    color: #ffffff;
+ }
 
-    .burger {
-        display: block; /* Afficher le menu burger sur les écrans plus petits */
-        cursor: pointer;
-    }
+ /* -------------------------------- Header --------------*/
+header {
+    background-image: url(../images/about.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 658px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #ffffff;
+}
+
+.slogan {
+    font-family: "OpenSans-Bold", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-bottom: #ffffff 1px solid;
+    padding-inline: 55px;
+    padding-bottom: 10px;
+}
+h1{
+    margin: 0;
+}
+
+.interaction-btn {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: smaller;
+    font-family: "OpenSans-Bold", sans-serif;
+    background-color: #ffffff;
+}
+
+/* ---------------------------------- main cards-gallery -----------------------*/
+
+.cards-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-block: 30px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    
+}
+
+.cards-container figure h3{
+    background-color: #DD5555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 50%;
+}
+.cards-container figure img {
+    background-size: cover;
+    width: 40px;
+}
+
+.cards-container figure {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: calc((100% / 3) - 20px);
+}
+
+.cards-container figure figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.cards-container figure figcaption p {
+    font-size: 12px;
+    color: #4f4f4f;
+}
+
+/* ---------------------------------- main about  -----------------------*/
+
+.about h2{
+    background-image: url(../images/team.avif);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: "OpenSans-Bold", sans-serif;
+    font-size: 30px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.workers-cards {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.workers-cards figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    
+}
+
+.worker {
+    border-radius: 50%;
+    width: 230px;
+}
+
+.workers-cards figure figcaption button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: smaller;
+    font-family: "OpenSans-Bold", sans-serif;
+    background-color: #DD5555;
+    color: #ffffff;
+}
+
+.workers-cards figcaption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.workers-cards h4{
+    font-family: "OpenSans-Bold", sans-serif;
+    font-weight: 600;
+}
+
+.envelope {
+    width: 22px;
+    align-items: center;
+    padding-right: 3px;
+}
+
+/* ---------------------------------- footer  -----------------------*/
+
+footer {
+    background-color: #DD5555;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    height: 400px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.info {
+    display: flex;
+    justify-content: center;
+}
+
+.info li{
+    list-style: none;
+    padding: 0;
+}
+.info label, .info input {
+    margin-bottom: 10px;
+}
+
+.info label {
+    display: block; /* Afficher sur une nouvelle ligne */
+    margin-bottom: 10px; /* Espacement entre les éléments */
+    width: 200px; /* Ajustez la largeur du label selon vos besoins */ /* Aligner le texte du label à droite */
+    margin-right: 10px; /* Espacement entre le label et le champ de saisie */
+}
+
+.info input {
+    border: none;
+    width: 300px; /* Ajustez la largeur du champ de saisie selon vos besoins */
+}
+
+
+.message {
+    width: 100%; /* Pleine largeur pour le message */
+    margin-top: 20px; /* Espacement par rapport aux éléments précédents */
+}
+
+.message label,
+.message textarea {
+    border: none;
+    width: 100%; /* Pleine largeur pour le label et la textarea */
+    display: block; /* Afficher sur une nouvelle ligne */
+    margin-bottom: 10px; /* Espacement entre les éléments */
+}
+
+.submit-btn {
+    background-color: #ffffff;
+    
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: "OpenSans-Bold", sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    top: 2%;
+    left: 42%;
+    display:flex ;
+    align-items: center;
+}
+
+.submit-btn img {
+    width: 20px;
+    margin-right: 5px;
 }

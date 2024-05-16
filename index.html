@@ -54,15 +54,17 @@
           alt="le logo de la marque Super App"
       /></a>
       <ul>
-        <li>A propos</li>
-        <li>Services</li>
-        <li>L'équipe</li>
-        <li>Contact</li>
+        <li><a href="#">A propos</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">L'équipe</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
     <header>
-      <h1>Super App</h1>
-      <p>L'application trop super!</p>
+      <div class="slogan">
+        <h1>SUPER APP</h1>
+        <p>L'application trop super !</p>
+      </div>
       <div class="interaction-btn">
         <button>
           <img src="./assets/images/svg/thumbs-up.svg" alt="pouce en l'air" />
@@ -87,15 +89,17 @@
 
     <main>
       <section class="cards-gallery">
-        <h2>ELLE FAIT DES TRUCS SUPPERS!</h2>
+        <h2>ELLE FAIT DES TRUCS SUPERS!</h2>
         <div class="cards-container">
           <figure>
-            <img
-              src="./assets/images/svg/fork-and-knife-silhouette.svg"
-              alt="une fourchette et un couteau"
-            />
+            <h3>
+              <img
+                src="./assets/images/svg/fork-and-knife-silhouette.svg"
+                alt="une fourchette et un couteau"
+              />
+            </h3>
             <figcaption>
-              <h3>Mettre la table</h3>
+              <h4>Mettre la table</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Reiciendis obcaecati eaque labore, illo minus sint pariatur
@@ -104,12 +108,28 @@
             </figcaption>
           </figure>
           <figure>
-            <img
-              src="./assets/images/svg/bed.svg"
-              alt="une personne dormant dans un lit"
-            />
+            <h3>
+              <img
+                src="./assets/images/svg/bed.svg"
+                alt="une personne dormant dans un lit"
+              />
+            </h3>
             <figcaption>
-              <h3>Faire le lit</h3>
+              <h4>Faire le lit</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis obcaecati eaque labore, illo minus sint pariatur
+                architecto optio molestiae.
+              </p>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <h3>
+              <img src="./assets/images/svg/fire-symbol.svg" alt="une flamme" />
+            </h3>
+            <figcaption>
+              <h4>Allumer le feu</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Reiciendis obcaecati eaque labore, illo minus sint pariatur
@@ -118,9 +138,14 @@
             </figcaption>
           </figure>
           <figure>
-            <img src="./assets/images/svg/fire-symbol.svg" alt="une flamme" />
+            <h3>
+              <img
+                src="./assets/images/svg/plant-leaf-with-white-details.svg"
+                alt="une feuille d'arbre"
+              />
+            </h3>
             <figcaption>
-              <h3>Allumer le feu</h3>
+              <h4>Ramasser les feuilles</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Reiciendis obcaecati eaque labore, illo minus sint pariatur
@@ -129,12 +154,14 @@
             </figcaption>
           </figure>
           <figure>
-            <img
-              src="./assets/images/svg/plant-leaf-with-white-details.svg"
-              alt="une feuille d'arbre"
-            />
+            <h3>
+              <img
+                src="./assets/images/svg/umbrella-black-silhouette.svg"
+                alt="un parapluie ouvert"
+              />
+            </h3>
             <figcaption>
-              <h3>Ramasser les feuilles</h3>
+              <h4>Protéger de la pluie</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Reiciendis obcaecati eaque labore, illo minus sint pariatur
@@ -143,26 +170,14 @@
             </figcaption>
           </figure>
           <figure>
-            <img
-              src="./assets/images/svg/umbrella-black-silhouette.svg"
-              alt="un parapluie ouvert"
-            />
+            <h3>
+              <img
+                src="./assets/images/svg/dollar-symbol.svg"
+                alt="le symbole du dollar"
+              />
+            </h3>
             <figcaption>
-              <h3>Protéger de la pluie</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reiciendis obcaecati eaque labore, illo minus sint pariatur
-                architecto optio molestiae.
-              </p>
-            </figcaption>
-          </figure>
-          <figure>
-            <img
-              src="./assets/images/svg/dollar-symbol.svg"
-              alt="le symbole du dollar"
-            />
-            <figcaption>
-              <h3>Vider votre compte</h3>
+              <h4>Vider votre compte</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Reiciendis obcaecati eaque labore, illo minus sint pariatur
@@ -173,13 +188,14 @@
         </div>
       </section>
 
-      <section class="teamworker">
+      <section class="about">
         <h2>La super équipe à l'orgine de SuperApp</h2>
 
         <div class="workers-cards">
           <figure>
             <img
               src="./assets/images/avaone.avif"
+              class="worker"
               alt="photo de Tex Talign portant une moustache et des lunette de soleil "
             />
             <figcaption>
@@ -187,8 +203,10 @@
               <button mailto="mailto:TexTalign@exemple.com">
                 <img
                   src="./assets/images/svg/envelope.svg"
+                  class="envelope"
                   alt="une envelope blanche"
                 />
+                Lui écrire
               </button>
             </figcaption>
           </figure>
@@ -196,6 +214,7 @@
           <figure>
             <img
               src="./assets/images/avatwo.avif"
+              class="worker"
               alt="portrait de Marge inn fixant l'objectif "
             />
             <figcaption>
@@ -203,8 +222,10 @@
               <button mailto="mailto:margeinn@exemple.com">
                 <img
                   src="./assets/images/svg/envelope.svg"
+                  class="envelope"
                   alt="une envelope blanche"
                 />
+                Lui écrire
               </button>
             </figcaption>
           </figure>
@@ -212,6 +233,7 @@
           <figure>
             <img
               src="./assets/images/avathree.avif"
+              class="worker"
               alt="portrait de Issac Newton fixant l'objectif "
             />
             <figcaption>
@@ -219,8 +241,10 @@
               <button mailto="mailto:IssacNewton@exemple.com">
                 <img
                   src="./assets/images/svg/envelope.svg"
+                  class="envelope"
                   alt="une envelope blanche"
                 />
+                Lui écrire
               </button>
             </figcaption>
           </figure>
@@ -228,6 +252,7 @@
           <figure>
             <img
               src="./assets/images/avafour.avif"
+              class="worker"
               alt="portrait de Ash Tehemel fixant l'objectif "
             />
             <figcaption>
@@ -235,24 +260,40 @@
               <button mailto="mailto:AshTehemel@exemple.com">
                 <img
                   src="./assets/images/svg/envelope.svg"
+                  class="envelope"
                   alt="une envelope blanche"
                 />
+                Lui écrire
               </button>
             </figcaption>
           </figure>
         </div>
       </section>
     </main>
+
     <footer>
       <h2>Envoyez-nous un message</h2>
+
       <form action="/submit">
-        <label for="name">Votre nom</label>
-        <input type="text" id="name" />
-        <label for="mail">Votre e-mail</label>
-        <input type="email" id="mail" />
-        <label for="message">Votre message</label>
-        <textarea id="message"></textarea>
-        <button type="submit">Envoyer</button>
+
+        <ul class="info">
+          <li>
+            <label for="name">Votre nom</label>
+            <input type="text" id="name" />
+        </li>
+
+          <li>
+            <label for="mail">Votre e-mail</label>
+            <input type="email" id="mail" />
+          </ul>
+
+        </ul>
+
+        <div class="message">
+          <label for="message">Votre message</label>
+          <textarea id="message"></textarea>
+        </div>
+        <button class="submit-btn" type="submit"><img src="./assets/images/svg/paper-plane.svg" alt="">Envoyer</button>
       </form>
     </footer>
 
