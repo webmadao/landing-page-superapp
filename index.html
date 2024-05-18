@@ -45,20 +45,36 @@
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
+
+
   <body>
     <nav>
-      <a href="#"
-        ><img
-          src="./assets/images/Logo.avif"
-          alt="le logo de la marque Super App"
-      /></a>
-      <ul>
-        <li><a href="#">A propos</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">L'équipe</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+        <a href="#">
+            <img src="./assets/images/Logo.avif" alt="le logo de la marque Super App" />
+        </a>
+        <ul class="classic-menu active">
+            <li><a href="#">A propos</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">L'équipe</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    
+        <div class="menu-burger">
+            <input type="checkbox" id="toggle" />
+            <label for="toggle" class="menu-burgerbtn"><i class="fas fa-bars active"></i></label>
+            <ul class="side-menu">
+                <span class="closer-btn">X</span>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">L'équipe</a></li>
+                <li><a href="#">Contact</a></li>
+                
+            </ul>
+            
+        </div>
     </nav>
+
+
     <header>
       <div class="slogan">
         <h1>SUPER APP</h1>
@@ -66,11 +82,12 @@
       </div>
       <div class="interaction-btn">
         <button>
-          <img src="./assets/images/svg/thumbs-up.svg" alt="pouce en l'air" />
+          <img class="icones" src="./assets/images/svg/thumbs-up.svg" alt="pouce en l'air" />
           Like it
         </button>
         <button>
           <img
+          class="icones"
             src="./assets/images/svg/heart-shape-silhouette.svg"
             alt="un coeur  "
           />
@@ -78,6 +95,7 @@
         </button>
         <button>
           <img
+          class="icones"
             src="./assets/images/svg/shopping-cart-black-shape.svg"
             alt="un chariot de courses"
           />
@@ -191,6 +209,9 @@
         <h2>La super équipe à l'orgine de SuperApp</h2>
 
         <div class="workers-cards">
+          
+          <ul class="first-team">
+            <li>
           <figure>
             <img
               src="./assets/images/avaone.avif"
@@ -209,7 +230,8 @@
               </button>
             </figcaption>
           </figure>
-
+          </li>
+          <li>
           <figure>
             <img
               src="./assets/images/avatwo.avif"
@@ -228,7 +250,11 @@
               </button>
             </figcaption>
           </figure>
+        </li>
+        </ul>
+<ul class="second-team">
 
+          <li>
           <figure>
             <img
               src="./assets/images/avathree.avif"
@@ -247,7 +273,8 @@
               </button>
             </figcaption>
           </figure>
-
+        </li>
+          <li>
           <figure>
             <img
               src="./assets/images/avafour.avif"
@@ -266,6 +293,8 @@
               </button>
             </figcaption>
           </figure>
+        </li>
+        </ul>
         </div>
       </section>
     </main>
