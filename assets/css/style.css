@@ -379,6 +379,8 @@ form {
     display: block;
 }
 
+/* ---------------------------------- media queries  -----------------------*/
+
 @media screen and (max-width: 768px) {
     nav{
         padding-block: 15px;
