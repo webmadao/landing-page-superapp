@@ -167,6 +167,7 @@ button:hover {
     font-size: 30px;
     margin-top: 10px;
     text-align: center;
+    padding-inline: 5px;
 }
 
 .workers-cards {
